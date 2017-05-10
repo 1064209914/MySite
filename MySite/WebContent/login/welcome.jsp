@@ -7,15 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-		<%
-			String userName=request.getParameter("name");
-			String userPw=request.getParameter("password");
-			if(userName.equals("hxd")&&userPw.equals("1064209914")){
-		%>
-				<jsp:forward page=""></jsp:forward>
-			<%}
-			else
-			%>
-			<jsp:forward page=""></jsp:forward>
+				<%
+				String  s=(String)session.getAttribute("name");
+				%>
+		<h1 style="position: absolute;">欢迎 <%=s %>
+		</h1>
+				
+			<a href="logout.jsp" style="position: absolute; right: 200px;">注销</a>		
 </body>
 </html>

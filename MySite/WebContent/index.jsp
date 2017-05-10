@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<title>系统登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登录</title>
 <style type="text/css">
 body {
 	font-family: Microsoft YaHei, Segoe UI, Tahoma, Arial, Verdana,
 		sans-serif;
 	font-size: 12px;
 	color: #fff;
-	height: 100%;
-	width: 100%;
-	
+	background-size: cover;			/* 左右填充 */
+	background-repeat: no-repeat;		/* 是否重复 */
+	background-attachment: fixed;		/* 上下填充 */
+	z-index: auto;
 }
 
 * {
@@ -28,36 +30,16 @@ h1 {
 
 .login-box {
 	width: 410px;
-	margin: 120px auto 0 auto;
+	margin: 130px auto 0 auto;
 	text-align: center;
 	padding: 30px;
 	border-radius: 10px;
+	background-color: rgba(158, 158, 158, 0.26);
 }
 
-.login-box .name, .login-box .password, .login-box .code, .login-box .remember
-	{
+.login-box .name, .login-box .password {
 	font-size: 16px;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .1)
-}
-
-.login-box .remember input {
-	box-shadow: none;
-	width: 15px;
-	height: 15px;
-	margin-top: 25px
-	
-}
-
-.login-box .remember {
-	padding-left: 40px
-}
-
-.login-box .remember label {
-	display: inline-block;
-	height: 42px;
-	width: 70px;
-	line-height: 34px;
-	text-align: left
 }
 
 .login-box label {
@@ -67,27 +49,12 @@ h1 {
 	vertical-align: middle
 }
 
-.login-box #code {
-	width: 120px
-}
-
-.login-box .codeImg {
-	float: right;
-	margin-top: 26px;
-}
-
-.login-box img {
-	width: 148px;
-	height: 42px;
-	border: none
-}
-
 input[type=text], input[type=password] {
 	width: 270px;
 	height: 42px;
 	margin-top: 25px;
 	padding: 0px 15px;
-	border: 1px solid rgba(255, 255, 255, .15);
+	border: 1px inset;
 	border-radius: 6px;
 	color: #fff;
 	letter-spacing: 2px;
@@ -115,32 +82,27 @@ input:focus {
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 7px 0
 		rgba(0, 0, 0, .2)
 }
-
 </style>
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-<script type="text/javascript">
-            
-
-        </script>
 </head>
-<body background="./images/2.jpg" style=" ">
+<body>
+<body background="./images/2.jpg">
 	<div class="login-box">
 		<h1>个人主页登录</h1>
-		<form method="post" action="./login/loginreceive.jsp"  >
+		<form method="post" action="./login/loginreceive.jsp">
 			<div class="name">
-				<label>管理员账号：</label> <input type="text" name="" id="" tabindex="1" />
+				<label>管理员账号：</label> <input type="text" name="uName" id=""
+					tabindex="1" />
 			</div>
 			<div class="password">
-				<label>密 码：</label> <input type="password" name="" maxlength="16"
+				<label>密 码：</label> <input type="password" name="uId" maxlength="16"
 					id="" tabindex="2" />
 			</div>
 			<div class="login">
 				<button type="submit" tabindex="5"
 					style="width: 307px; margin-left: 100px;">登录</button>
+				
 			</div>
 		</form>
 	</div>
-	
-
 </body>
 </html>
