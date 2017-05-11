@@ -13,7 +13,7 @@ body {
 	color: #fff;
 	background-size: cover;			/* 左右填充 */
 	background-repeat: no-repeat;		/* 是否重复 */
-	background-attachment: fixed;		/* 上下填充 */
+	background-attachment: fixed;		
 	z-index: auto;
 }
 
@@ -90,11 +90,11 @@ input:focus {
 		<h1>个人主页登录</h1>
 		<form method="post" action="./login/loginreceive.jsp">
 			<div class="name">
-				<label>管理员账号：</label> <input type="text" name="uName" id=""
+				<label>管理员账号：</label> <input type="text" name="userName" id=""
 					tabindex="1" />
 			</div>
 			<div class="password">
-				<label>密 码：</label> <input type="password" name="uId" maxlength="16"
+				<label>密 码：</label> <input type="password" name="passWord" maxlength="16"
 					id="" tabindex="2" />
 			</div>
 			<div class="login">

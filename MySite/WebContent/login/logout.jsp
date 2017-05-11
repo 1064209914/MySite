@@ -9,7 +9,7 @@
 <body>
 			<%
 			session.invalidate();
-			response.setHeader("reflush", "2;URL=../index.jsp");
+			response.setHeader("refresh", "2;URL=../index.jsp");
 			%>
 			<p>你已经成功退出2秒以后自动回到登录页</p>
 			如果没又跳转请<a href="../index.jsp" >点击这里</a>

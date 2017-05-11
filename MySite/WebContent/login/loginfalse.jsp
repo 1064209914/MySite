@@ -7,11 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-			<%
-				String  s=(String)session.getAttribute("userName");
-				%>
-		<h1 style="position: absolute;">欢迎 <%=s %>
-		</h1>
-			<a href="logout.jsp" style="position: absolute; right: 200px;">注销</a>		
+	<h3>登录失败</h3>
+	<a href="../index.jsp">点击返回登录</a>
 </body>
 </html>
