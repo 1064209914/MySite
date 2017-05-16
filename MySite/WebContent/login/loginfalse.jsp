@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>登录失败</h3>
+	<h3 style="color: red;">用户名或密码不正确</h3>
 	<a href="../index.jsp">点击返回登录</a>
 </body>
 </html>

@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-			<%
-				String  s=(String)session.getAttribute("userName");
-				%>
-		<h1 style="position: absolute;">欢迎 <%=s %>
-		</h1>
-			<a href="../login/logout.jsp" style="position: absolute; right: 200px;">注销</a>		
+<h1>恭喜你！！！注册成功。。。</h1>
 </body>
 </html>

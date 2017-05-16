@@ -88,7 +88,7 @@ input:focus {
 <body background="./images/2.jpg">
 	<div class="login-box">
 		<h1>个人主页登录</h1>
-		<form method="post" action="./login/loginreceive.jsp">
+		<form method="post" action=" <%=request.getContextPath() %>/servlet/LoginTest ">
 			<div class="name">
 				<label>管理员账号：</label> <input type="text" name="userName" id=""
 					tabindex="1" />
