@@ -88,18 +88,22 @@ input:focus {
 <body background="./images/2.jpg">
 	<div class="login-box">
 		<h1>个人主页登录</h1>
-		<form method="post" action=" <%=request.getContextPath() %>/servlet/LoginTest ">
+		<form method="post" action=" <%=request.getContextPath() %>/servlet/LoginTest "  >
 			<div class="name">
 				<label>管理员账号：</label> <input type="text" name="userName" id=""
-					tabindex="1" />
+					tabindex="1" required="required" />
 			</div>
 			<div class="password">
 				<label>密 码：</label> <input type="password" name="passWord" maxlength="16"
-					id="" tabindex="2" />
+					id="" tabindex="2" required="required" />
 			</div>
 			<div class="login">
 				<button type="submit" tabindex="5"
 					style="width: 307px; margin-left: 100px;">登录</button>
+				</div>
+			<div class="login">
+				<h2><a href="register.jsp" style="margin-left: 330px;">点击注册</a></h2>
+					
 				
 			</div>
 		</form>

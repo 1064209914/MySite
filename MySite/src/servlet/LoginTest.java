@@ -1,8 +1,11 @@
 package servlet;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -47,11 +50,10 @@ public class LoginTest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//用缓存读取的
-		BufferedReader br=new BufferedReader(new FileReader("E:\\vbox\\Test.txt"));
+		BufferedReader br=new BufferedReader(new FileReader("E:\\vbox\\registerDemo.txt"));
 		
 		String s ;
 		while((s=br.readLine())!=null){
-			System.out.println(s);
 			Pattern pattern1=Pattern.compile("(\\w+)=(\\w+)");
 			Matcher m=pattern1.matcher(s);
 			while(m.find()){
@@ -63,7 +65,16 @@ public class LoginTest extends HttpServlet {
 			
 		}
 		br.close();
-		request.getRequestDispatcher("/login/loginfalse.jsp").forward(request, response);;
+		request.getRequestDispatcher("/login/loginfalse.jsp").forward(request, response);
+	/*	ObjectInputStream ois=new ObjectInputStream(new FileInputStream("E:\\vbox\\Test.txt"));
+		try {
+			ArrayList<User> users=(ArrayList<User>) ois.readObject();
+			System.out.println(users);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		ois.close();*/
 	}
 
 	/**
