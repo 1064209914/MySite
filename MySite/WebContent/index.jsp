@@ -103,7 +103,6 @@ input:focus {
 				</div>
 			<div class="login">
 				<h2><a href="register.jsp" style="margin-left: 330px;">点击注册</a></h2>
-					
 				
 			</div>
 		</form>

@@ -10,8 +10,9 @@
 			<%
 				String  s=(String)session.getAttribute("userName");
 				%>
-		<h1 style="position: absolute;">欢迎 <%=s %>
+		<h1 style="position: absolute;">欢迎 <%=s %>&nbsp;&nbsp;&nbsp;&nbsp;当前人数：&nbsp;${count}
 		</h1>
-			<a href="../login/logout.jsp" style="position: absolute; right: 200px;">注销</a>		
+			<a href="../login/logout.jsp" style="position: absolute; right: 200px;">注销</a>	
+				
 </body>
 </html>
