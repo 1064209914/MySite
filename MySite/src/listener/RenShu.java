@@ -24,7 +24,7 @@ public class RenShu implements HttpSessionListener {
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent arg0)  { 
-        count++;
+        count+=1;
         //存放起来
         arg0.getSession().getServletContext().setAttribute("count", count);
     }

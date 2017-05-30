@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<style type="text/css">
+table {
+	border-color:aqua;
+	border:solid;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	border-collapse: separate;
+
+}
+input[type=text] {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+</style>
+</head>
+<body>
+<a href="#biaoge" >表格</a> &nbsp;&nbsp;&nbsp; <a href="#biaodan" >表单</a>&nbsp;&nbsp;&nbsp;<a href="#p" >p</a>
+		<h1>这是标题标签</h1><hr/>
+		<h2>接下来都是块级标签</h2>
+		<p>段落标签</p>	
+		<h3>有序和无需标签</h3>
+		<ol>
+		<li>小学</li>
+		<li>初中</li>
+		<li>高中</li>
+		</ol>
+		<ul>
+			<li>小学</li>
+			<li>初中</li>
+			<li>高中</li>
+		</ul>
+		<a name="biaoge" ></a>
+	<!-- 表格 -->
+		<table border="" >
+			<caption>学习路线</caption>
+			<thead> <tr> <td>课程</td> <td>时间</td> </tr> </thead>
+			<tbody> 
+			<tr> <td width="50%;">JAVA</td> <td>2周</td> </tr> 
+			<tr> <td >webCore</td> <td>1周</td> </tr>
+			<tr> <td >JavaWeb</td> <td>2周</td> </tr> 
+			</tbody>
+			<tfoot>
+			<tr><td rowspan="2" height="50px;" ></td> <td height="25px;"></td> </tr>
+			<tr> <td ></td> </tr>
+			<tr> <td colspan="2" height="50px;"></td> </tr>
+			</tfoot>
+		</table> <hr/>
+		<h2>行级标签</h2>
+<a name="p" ></a>		
+		<p>img ----- 图像标签；
+span ----- 范围标签；
+空元素标签：span 和Div  ，多用于应用样式！
+其他标签：q---浏览器会对被引用的文字自动加上引号。</p><br/>
+<a name="biaodan" ></a>
+<!-- 表单 -->
+		<table border="" >
+			<caption>个人信息</caption>
+			<!-- <thead> <tr> <td>课程</td> <td>时间</td> </tr> </thead> -->
+			<tbody> 
+			<tr> <td width="30%;">姓名</td> <td> <input type="text"/> </td> </tr> 
+			<tr> <td >webCore</td> <td>1周</td> </tr>
+			<tr> <td >JavaWeb</td> <td>2周</td> </tr> 
+			</tbody>
+			<tfoot>
+			<tr><td rowspan="2" height="50px;" ></td> <td height="25px;"></td> </tr>
+			<tr> <td ></td> </tr>
+			<tr> <td colspan="2" height="50px;"></td> </tr>
+			</tfoot>
+		</table> <hr/>
+		<textarea rows="20px;" cols="50px;" readonly="readonly" >好几款回家开黑黄金客户空间进口红酒开黑会尽快汇款</textarea>
+		同意条款<input type="checkbox"  value="agree" name="agree" disabled="disabled" />
+		<input type="submit"  />
+		<select  size="2" multiple="multiple" >
+			<option value="中国" >中国</option>
+			<option value="中国" >中国</option>
+			<option value="中国" >中国</option>
+		</select>
+</body>
+</html>
